@@ -1,0 +1,261 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .grid > .whatwe .service-box {
+    font-size: 1.5em;
+    margin-bottom: 2em; }
+  .grid > .whatwe .hundcontainer .hundred p {
+    font-size: 13vw; }
+  .grid > .whatwe .hundcontainer .trust, .grid > .whatwe .hundcontainer .reliable, .grid > .whatwe .hundcontainer .workrate {
+    margin-left: 0.5em; }
+    .grid > .whatwe .hundcontainer .trust p, .grid > .whatwe .hundcontainer .reliable p, .grid > .whatwe .hundcontainer .workrate p {
+      font-size: 3vw; }
+  .grid > .whatwe .hundcontainer .trust {
+    bottom: -0.5em; }
+  .grid > .whatwe .hundcontainer .reliable {
+    bottom: -0.3em; }
+  .grid > .whatwe .hundcontainer .workrate {
+    bottom: 0.1em; }
+  .grid > .whatwe .hundcontainer .tick1 {
+    bottom: -0.7em; }
+  .grid > .whatwe .hundcontainer .tick2 {
+    bottom: -0.5em; }
+  .grid > .whatwe .hundcontainer .tick3 {
+    bottom: -0.2em; } }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header" "whatwe reviews" "whatwe contact"; }
+    .grid header {
+      background-color: #326795;
+      background-image: url("../imgs/tools_sml.jpg");
+      background-size: cover;
+      background-position: top right;
+      background-repeat: no-repeat;
+      min-height: 0;
+      height: auto; }
+      .grid header .logo-holder {
+        background-size: 20%; }
+      .grid header nav .about-box:hover > a > .about-img {
+        transform: scale(1.2); }
+      .grid header nav .about-box .about-img {
+        display: inline-block;
+        transform: scale 0.9;
+        transition: all 0.4s cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+        .grid header nav .about-box .about-img svg {
+          width: 100%;
+          height: 100%; }
+      .grid header nav .reviews-box:hover > a > .reviews-img {
+        transform: scale(1.3); }
+      .grid header nav .reviews-box .reviews-img {
+        display: inline-block;
+        transform: scale 1;
+        transition: all 0.4s cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+        .grid header nav .reviews-box .reviews-img svg {
+          width: 100%;
+          height: 100%; }
+      .grid header nav .contact-box:hover > a > .contact-img {
+        transform: scale(1.2); }
+      .grid header nav .contact-box .contact-img {
+        display: inline-block;
+        transform: scale 0.9;
+        transition: all 0.4s cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+        .grid header nav .contact-box .contact-img svg {
+          width: 100%;
+          height: 100%; }
+      .grid header .main-title {
+        text-align: left;
+        width: 50%;
+        float: left;
+        padding: 2em 0 0 2.5em; }
+        .grid header .main-title h1 {
+          color: white;
+          font-weight: 100;
+          font-size: 5em; }
+      .grid header #dan-large-box {
+        display: inline-block;
+        width: 50%;
+        float: right;
+        text-align: center;
+        padding: 2.8em 2.5em 0 2.5em; }
+        .grid header #dan-large-box .dan-box {
+          width: 6em;
+          height: 6em;
+          position: relative;
+          margin: 0 auto;
+          background-color: white;
+          background-image: url("../imgs/profile.jpg");
+          background-size: 120%;
+          background-position: -0.4em 0.8em;
+          background-repeat: no-repeat;
+          border: 0.4em solid #326795;
+          border-radius: 50%;
+          z-index: 2;
+          position: relative;
+          top: -20px;
+          transition: all 0.4s cubic-bezier(0.47, 2.02, 0.31, -0.36);
+          display: inline-block; }
+          .grid header #dan-large-box .dan-box:hover {
+            transform: scale(1.2); }
+        .grid header #dan-large-box h2 {
+          color: white;
+          font-size: 1.8em;
+          font-weight: 500;
+          margin-top: 0.5em; }
+        .grid header #dan-large-box p {
+          color: white;
+          font-size: 20px;
+          font-weight: 300;
+          padding: 1em 2.5em 2.5em 2.5em; }
+        .grid header #dan-large-box strong {
+          color: white;
+          font-weight: 500; }
+    .grid .about {
+      display: none; }
+    .grid .whatwe {
+      background-color: #eb3647;
+      background-image: url("../imgs/product_bg.jpg");
+      background-repeat: no-repeat;
+      background-size: 95%;
+      background-position: center center; }
+      .grid .whatwe .service-box {
+        font-size: 1.5em;
+        font-weight: 100; }
+      .grid .whatwe .hundcontainer .hundred p {
+        font-size: 8vw; }
+      .grid .whatwe .hundcontainer .trust p, .grid .whatwe .hundcontainer .reliable p, .grid .whatwe .hundcontainer .workrate p {
+        font-size: 2vw;
+        font-weight: 900; }
+      .grid .whatwe .hundcontainer .trust {
+        bottom: -0.3em; }
+      .grid .whatwe .hundcontainer .reliable {
+        bottom: -0.1em; }
+      .grid .whatwe .hundcontainer .workrate {
+        bottom: 0.2em; }
+      .grid .whatwe .hundcontainer .tick1, .grid .whatwe .hundcontainer .tick2, .grid .whatwe .hundcontainer .tick3 {
+        margin-left: 0.5em; }
+      .grid .whatwe .hundcontainer .tick1 {
+        bottom: -0.4em; }
+      .grid .whatwe .hundcontainer .tick2 {
+        bottom: -0.2em; }
+      .grid .whatwe .hundcontainer .tick3 {
+        bottom: 0em; }
+    .grid #reviews > #slideshow {
+      width: 50vw; }
+      .grid #reviews > #slideshow .slides {
+        width: 200vw; }
+        .grid #reviews > #slideshow .slides .slide {
+          width: 50vw; }
+    .grid #contact .hold-contact-info .phone-box {
+      position: relative; }
+      .grid #contact .hold-contact-info .phone-box .phone-img {
+        display: inline-block;
+        margin: 0 0.7em 0 0;
+        height: 35px;
+        width: 35px;
+        position: relative;
+        top: 0.15em; }
+    .grid #contact .hold-contact-info .email-box {
+      position: relative; }
+      .grid #contact .hold-contact-info .email-box .email-img {
+        display: inline-block;
+        margin: 0 0.7em 0 0;
+        height: 35px;
+        width: 35px;
+        position: relative;
+        top: 0.55em; }
+    .grid #contact .phoneno {
+      font-size: 2.3em;
+      display: inline-block;
+      margin-bottom: 0.5em; }
+    .grid #contact .emailaddy {
+      font-size: 1em;
+      display: inline-block;
+      margin-bottom: 1.5em; }
+    .grid #contact .kyle-design-lrg {
+      display: block;
+      position: relative;
+      bottom: -2em; }
+      .grid #contact .kyle-design-lrg p {
+        font-weight: 300; }
+    .grid .kyle-design {
+      display: none; } }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .grid header {
+    max-height: 500px;
+    min-height: 480px;
+    background-size: cover;
+    background-color: #326795;
+    background-image: url("../imgs/tools_lrg.jpg");
+    background-position: top left -100px; }
+    .grid header .logo-holder {
+      display: none; }
+    .grid header nav {
+      grid-template-columns: 150px 1fr 180px 180px 180px;
+      margin-top: 30px; }
+      .grid header nav .nav-logo {
+        display: block;
+        background-image: url("../imgs/icons/ds_logo.svg");
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        margin-left: 1.5em; }
+      .grid header nav .spacer {
+        display: block; }
+    .grid header #dan-large-box {
+      display: inline-block;
+      width: 40%;
+      float: right;
+      text-align: center;
+      padding: 2.8em 2.5em 0 2.5em;
+      margin-top: 40px; }
+      .grid header #dan-large-box p {
+        padding: 1em 2.5em 0 2.5; }
+    .grid header .main-title h1 {
+      font-size: 6em; }
+  .grid .whatwe .hundcontainer .hundred p {
+    font-size: 70px; }
+  .grid .whatwe .hundcontainer .trust p, .grid .whatwe .hundcontainer .reliable p, .grid .whatwe .hundcontainer .workrate p {
+    font-size: 20px; }
+  .grid .whatwe .hundcontainer .trust {
+    bottom: -0.2em; }
+  .grid .whatwe .hundcontainer .reliable {
+    bottom: -0.03em; }
+  .grid .whatwe .hundcontainer .workrate {
+    bottom: 0.15em; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .grid {
+    max-width: 1240px;
+    margin: 0 auto 0 auto;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4); }
+    .grid .whatwe .hundcontainer .hundred p {
+      font-size: 70px; }
+    .grid .whatwe .hundcontainer .trust, .grid .whatwe .hundcontainer .reliable, .grid .whatwe .hundcontainer .workrate {
+      margin-left: 0.2em; }
+      .grid .whatwe .hundcontainer .trust p, .grid .whatwe .hundcontainer .reliable p, .grid .whatwe .hundcontainer .workrate p {
+        font-size: 20px; }
+    .grid .whatwe .hundcontainer .trust {
+      bottom: -0.2em; }
+    .grid .whatwe .hundcontainer .reliable {
+      bottom: -0.03em; }
+    .grid .whatwe .hundcontainer .workrate {
+      bottom: 0.15em; }
+    .grid .whatwe .hundcontainer .tick1, .grid .whatwe .hundcontainer .tick2, .grid .whatwe .hundcontainer .tick3 {
+      margin-left: 0.5em; }
+    .grid .whatwe .hundcontainer .tick1 {
+      bottom: -0.3em; }
+    .grid .whatwe .hundcontainer .tick2 {
+      bottom: -0.14em; }
+    .grid .whatwe .hundcontainer .tick3 {
+      bottom: 0.06em; }
+    .grid #contact .emailaddy {
+      font-size: 1.8em; } }
+
+/*# sourceMappingURL=media.css.map */

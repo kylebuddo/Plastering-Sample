@@ -1,0 +1,595 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:100,300,400,500,900");
+h2 {
+  font-weight: 900;
+  color: white; }
+
+ul {
+  list-style-type: none; }
+  ul li {
+    padding: 0.2em 0; }
+
+a {
+  color: white;
+  text-decoration: none; }
+  a:hover {
+    cursor: pointer; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif; }
+
+.grid {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 75vh auto auto auto auto;
+  grid-template-areas: "header" "about" "whatwe" "reviews" "contact" "kyle-design"; }
+
+header {
+  grid-area: header;
+  height: 75vh;
+  min-height: 480px;
+  background-color: #326795;
+  background-image: url("../imgs/tools_sml.jpg");
+  background-size: cover;
+  background-position: top right -20px;
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4);
+  z-index: 1; }
+  header .logo-holder {
+    background-image: url("../imgs/icons/ds_logo.svg");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
+    width: 100%;
+    height: 80px; }
+  header nav {
+    background-color: #eb3647;
+    width: 100%;
+    color: white;
+    font-weight: 900;
+    font-size: 1.3em;
+    padding: 0.4em 0 0.4em 0;
+    margin-top: 15px;
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2), 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.2), 0px 0px 15px 0px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; }
+    header nav .nav-logo {
+      display: none; }
+    header nav .spacer {
+      display: none; }
+    header nav .about-box {
+      text-align: center; }
+      header nav .about-box .about-img {
+        height: 1.1em;
+        width: 1.1em;
+        position: relative;
+        top: 0.15em;
+        margin-right: 0.25em;
+        display: none; }
+    header nav .reviews-box {
+      text-align: center; }
+      header nav .reviews-box .reviews-img {
+        height: 1.1em;
+        width: 1.1em;
+        position: relative;
+        top: 0.15em;
+        margin-right: 0.5em;
+        display: none; }
+    header nav .contact-box {
+      text-align: center; }
+      header nav .contact-box .contact-img {
+        height: 1.1em;
+        width: 1.1em;
+        position: relative;
+        top: 0.15em;
+        margin-right: 0.4em;
+        display: none; }
+  header .main-title {
+    text-align: center;
+    padding: 2em 0 4em;
+    height: auto; }
+    header .main-title h1 {
+      color: white;
+      font-weight: 100;
+      font-size: 4.2em; }
+  header #dan-large-box {
+    display: none; }
+
+.about {
+  grid-area: about;
+  background-color: white;
+  text-align: center; }
+  .about #dan-box {
+    width: 7.7em;
+    height: 7.7em;
+    position: relative;
+    margin: auto;
+    background-color: white;
+    background-image: url("../imgs/profile.jpg");
+    background-size: 120%;
+    background-position: -0.4em 0.8em;
+    background-repeat: no-repeat;
+    border: 0.4em solid #326795;
+    border-radius: 50%;
+    transform: translateY(-50%);
+    z-index: 2; }
+  .about h2 {
+    color: #eb3647;
+    font-size: 2.3em;
+    font-weight: 300;
+    position: relative;
+    top: -0.8em; }
+  .about p {
+    color: #326795;
+    font-size: 22px;
+    font-weight: 500;
+    padding: 0 2.5em 2.5em 2.5em; }
+  .about strong {
+    color: #eb3647;
+    font-weight: 700; }
+
+.whatwe {
+  grid-area: whatwe;
+  background-color: #eb3647;
+  padding: 2.5em;
+  text-align: center;
+  -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4);
+  background-image: url("../imgs/product_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top right -60px; }
+  .whatwe h2 {
+    font-size: 1.9em;
+    margin-bottom: 1.3em; }
+  .whatwe .free-quotes {
+    margin-bottom: 0.9em; }
+  .whatwe p {
+    font-size: 1.1em;
+    font-weight: 500;
+    color: white; }
+  .whatwe hr {
+    width: 80%;
+    margin: 1.9em auto;
+    border: solid 1px white; }
+  .whatwe .service-box {
+    display: flex;
+    color: white;
+    font-size: 1em;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 3em; }
+    .whatwe .service-box .service-left {
+      width: 50%; }
+    .whatwe .service-box .service-right {
+      width: 50%; }
+  .whatwe .hundcontainer {
+    color: white;
+    display: grid;
+    grid-template-columns: 50% 8% 40%;
+    grid-template-rows: auto auto auto;
+    text-align: left;
+    text-transform: lowercase;
+    position: relative;
+    left: 20px;
+    font-size: 3.7vw;
+    font-weight: 500; }
+    .whatwe .hundcontainer .hundred {
+      grid-row: span 3;
+      letter-spacing: -0.08em;
+      text-align: right; }
+      .whatwe .hundcontainer .hundred p {
+        font-size: 20vw;
+        font-weight: 100; }
+    .whatwe .hundcontainer .trust, .whatwe .hundcontainer .reliable, .whatwe .hundcontainer .workrate {
+      dipsplay: flex;
+      align-items: flex-end;
+      position: relative;
+      margin-left: 1.2em; }
+    .whatwe .hundcontainer .trust {
+      bottom: -0.9em; }
+    .whatwe .hundcontainer .reliable {
+      bottom: -0.5em; }
+    .whatwe .hundcontainer .workrate {
+      bottom: 0.1em; }
+    .whatwe .hundcontainer .tick1, .whatwe .hundcontainer .tick2, .whatwe .hundcontainer .tick3 {
+      width: 15px;
+      height: 15px;
+      background-image: url("../imgs/icons/checked.svg");
+      background-size: cover;
+      margin-left: 1.4em; }
+      .whatwe .hundcontainer .tick1 p, .whatwe .hundcontainer .tick2 p, .whatwe .hundcontainer .tick3 p {
+        font-size: 4vw;
+        font-weight: 900; }
+    .whatwe .hundcontainer .tick1 {
+      position: relative;
+      bottom: -1.1em; }
+    .whatwe .hundcontainer .tick2 {
+      position: relative;
+      bottom: -0.8em; }
+    .whatwe .hundcontainer .tick3 {
+      position: relative;
+      bottom: -0.2em; }
+
+#reviews {
+  grid-area: reviews;
+  background-color: white;
+  text-align: center;
+  color: #eb3647; }
+  #reviews h2 {
+    margin: 1.3em auto 0.5em auto;
+    font-size: 1.9em;
+    color: #eb3647; }
+  #reviews #slideshow {
+    width: 100vw;
+    overflow: hidden; }
+    #reviews #slideshow .slides {
+      display: block;
+      width: 400vw; }
+      #reviews #slideshow .slides .slide {
+        float: left;
+        width: 100vw;
+        padding: 2.5em; }
+  #reviews blockquote {
+    color: #326795;
+    font-size: 1.3em;
+    font-weight: 500;
+    line-height: 1.6em;
+    letter-spacing: 0.01em;
+    position: relative; }
+  #reviews blockquote::before {
+    content: open-quote;
+    color: rgba(235, 54, 71, 0.2);
+    font-size: 7em;
+    font-family: "Times New Roman", serif;
+    position: absolute;
+    top: 32px;
+    left: 0px; }
+  #reviews blockquote::after {
+    content: close-quote;
+    color: rgba(235, 54, 71, 0.2);
+    font-size: 7em;
+    font-family: "Times New Roman", serif;
+    position: absolute;
+    bottom: -30px;
+    right: 0px; }
+  #reviews .customer-name {
+    font-size: 1em;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    text-align: right;
+    position: relative;
+    right: 30px; }
+  #reviews .customer-date {
+    font-size: 0.8em;
+    letter-spacing: 0.03em;
+    text-align: right;
+    position: relative;
+    right: 30px;
+    top: -5px; }
+
+#contact {
+  grid-area: contact;
+  background-color: #326795;
+  background-image: url("../imgs/tools_sml.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top left 0px;
+  text-align: center;
+  padding: 3.3em 2.5em 2.5em 2.5em; }
+  #contact h2 {
+    font-size: 1.9em;
+    padding: 0.5em 1.3em;
+    margin-bottom: 1.8em;
+    background-color: #eb3647;
+    display: inline-block;
+    -webkit-box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.2); }
+  #contact .phone-img {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin: 0 auto 1em auto;
+    background-image: url("../imgs/icons/call-answer.svg");
+    background-size: cover; }
+  #contact .email-img {
+    height: 40px;
+    width: 40px;
+    display: inline-block;
+    margin: 0 auto 1em auto;
+    background-image: url("../imgs/icons/message.svg");
+    background-size: cover; }
+  #contact .fb-img {
+    height: 40px;
+    width: 40px;
+    display: block;
+    margin: 0 auto 1em auto;
+    background-image: url("../imgs/icons/facebook-logo.svg");
+    background-size: cover; }
+  #contact p {
+    font-weight: 400;
+    color: white;
+    letter-spacing: 0.03em; }
+  #contact .phoneno {
+    font-size: 2.3em;
+    margin-bottom: 1.3em; }
+  #contact .emailaddy {
+    font-size: 1.2em;
+    margin-bottom: 2.2em; }
+  #contact .kyle-design-lrg {
+    display: none; }
+
+.kyle-design {
+  display: flex;
+  justify-content: center;
+  background-color: #eb3647;
+  padding: 10px; }
+  .kyle-design p {
+    color: #326795;
+    font-weight: 300; }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .grid > .whatwe .service-box {
+    font-size: 1.5em;
+    margin-bottom: 2em; }
+  .grid > .whatwe .hundcontainer .hundred p {
+    font-size: 13vw; }
+  .grid > .whatwe .hundcontainer .trust, .grid > .whatwe .hundcontainer .reliable, .grid > .whatwe .hundcontainer .workrate {
+    margin-left: 0.5em; }
+    .grid > .whatwe .hundcontainer .trust p, .grid > .whatwe .hundcontainer .reliable p, .grid > .whatwe .hundcontainer .workrate p {
+      font-size: 3vw; }
+  .grid > .whatwe .hundcontainer .trust {
+    bottom: -0.5em; }
+  .grid > .whatwe .hundcontainer .reliable {
+    bottom: -0.3em; }
+  .grid > .whatwe .hundcontainer .workrate {
+    bottom: 0.1em; }
+  .grid > .whatwe .hundcontainer .tick1 {
+    bottom: -0.7em; }
+  .grid > .whatwe .hundcontainer .tick2 {
+    bottom: -0.5em; }
+  .grid > .whatwe .hundcontainer .tick3 {
+    bottom: -0.2em; } }
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "header header" "whatwe reviews" "whatwe contact"; }
+    .grid header {
+      background-color: #326795;
+      background-image: url("../imgs/tools_sml.jpg");
+      background-size: cover;
+      background-position: top right;
+      background-repeat: no-repeat;
+      min-height: 0;
+      height: auto; }
+      .grid header .logo-holder {
+        background-size: 20%; }
+      .grid header nav .about-box:hover > a > .about-img {
+        transform: scale(1.2); }
+      .grid header nav .about-box .about-img {
+        display: inline-block;
+        transform: scale 0.9;
+        transition: all 0.4s cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+        .grid header nav .about-box .about-img svg {
+          width: 100%;
+          height: 100%; }
+      .grid header nav .reviews-box:hover > a > .reviews-img {
+        transform: scale(1.3); }
+      .grid header nav .reviews-box .reviews-img {
+        display: inline-block;
+        transform: scale 1;
+        transition: all 0.4s cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+        .grid header nav .reviews-box .reviews-img svg {
+          width: 100%;
+          height: 100%; }
+      .grid header nav .contact-box:hover > a > .contact-img {
+        transform: scale(1.2); }
+      .grid header nav .contact-box .contact-img {
+        display: inline-block;
+        transform: scale 0.9;
+        transition: all 0.4s cubic-bezier(0.47, 2.02, 0.31, -0.36); }
+        .grid header nav .contact-box .contact-img svg {
+          width: 100%;
+          height: 100%; }
+      .grid header .main-title {
+        text-align: left;
+        width: 50%;
+        float: left;
+        padding: 2em 0 0 2.5em; }
+        .grid header .main-title h1 {
+          color: white;
+          font-weight: 100;
+          font-size: 5em; }
+      .grid header #dan-large-box {
+        display: inline-block;
+        width: 50%;
+        float: right;
+        text-align: center;
+        padding: 2.8em 2.5em 0 2.5em; }
+        .grid header #dan-large-box .dan-box {
+          width: 6em;
+          height: 6em;
+          position: relative;
+          margin: 0 auto;
+          background-color: white;
+          background-image: url("../imgs/profile.jpg");
+          background-size: 120%;
+          background-position: -0.4em 0.8em;
+          background-repeat: no-repeat;
+          border: 0.4em solid #326795;
+          border-radius: 50%;
+          z-index: 2;
+          position: relative;
+          top: -20px;
+          transition: all 0.4s cubic-bezier(0.47, 2.02, 0.31, -0.36);
+          display: inline-block; }
+          .grid header #dan-large-box .dan-box:hover {
+            transform: scale(1.2); }
+        .grid header #dan-large-box h2 {
+          color: white;
+          font-size: 1.8em;
+          font-weight: 500;
+          margin-top: 0.5em; }
+        .grid header #dan-large-box p {
+          color: white;
+          font-size: 20px;
+          font-weight: 300;
+          padding: 1em 2.5em 2.5em 2.5em; }
+        .grid header #dan-large-box strong {
+          color: white;
+          font-weight: 500; }
+    .grid .about {
+      display: none; }
+    .grid .whatwe {
+      background-color: #eb3647;
+      background-image: url("../imgs/product_bg.jpg");
+      background-repeat: no-repeat;
+      background-size: 95%;
+      background-position: center center; }
+      .grid .whatwe .service-box {
+        font-size: 1.5em;
+        font-weight: 100; }
+      .grid .whatwe .hundcontainer .hundred p {
+        font-size: 8vw; }
+      .grid .whatwe .hundcontainer .trust p, .grid .whatwe .hundcontainer .reliable p, .grid .whatwe .hundcontainer .workrate p {
+        font-size: 2vw;
+        font-weight: 900; }
+      .grid .whatwe .hundcontainer .trust {
+        bottom: -0.3em; }
+      .grid .whatwe .hundcontainer .reliable {
+        bottom: -0.1em; }
+      .grid .whatwe .hundcontainer .workrate {
+        bottom: 0.2em; }
+      .grid .whatwe .hundcontainer .tick1, .grid .whatwe .hundcontainer .tick2, .grid .whatwe .hundcontainer .tick3 {
+        margin-left: 0.5em; }
+      .grid .whatwe .hundcontainer .tick1 {
+        bottom: -0.4em; }
+      .grid .whatwe .hundcontainer .tick2 {
+        bottom: -0.2em; }
+      .grid .whatwe .hundcontainer .tick3 {
+        bottom: 0em; }
+    .grid #reviews > #slideshow {
+      width: 50vw; }
+      .grid #reviews > #slideshow .slides {
+        width: 200vw; }
+        .grid #reviews > #slideshow .slides .slide {
+          width: 50vw; }
+    .grid #contact .hold-contact-info .phone-box {
+      position: relative; }
+      .grid #contact .hold-contact-info .phone-box .phone-img {
+        display: inline-block;
+        margin: 0 0.7em 0 0;
+        height: 35px;
+        width: 35px;
+        position: relative;
+        top: 0.15em; }
+    .grid #contact .hold-contact-info .email-box {
+      position: relative; }
+      .grid #contact .hold-contact-info .email-box .email-img {
+        display: inline-block;
+        margin: 0 0.7em 0 0;
+        height: 35px;
+        width: 35px;
+        position: relative;
+        top: 0.55em; }
+    .grid #contact .phoneno {
+      font-size: 2.3em;
+      display: inline-block;
+      margin-bottom: 0.5em; }
+    .grid #contact .emailaddy {
+      font-size: 1em;
+      display: inline-block;
+      margin-bottom: 1.5em; }
+    .grid #contact .kyle-design-lrg {
+      display: block;
+      position: relative;
+      bottom: -2em; }
+      .grid #contact .kyle-design-lrg p {
+        font-weight: 300; }
+    .grid .kyle-design {
+      display: none; } }
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .grid header {
+    max-height: 500px;
+    min-height: 480px;
+    background-size: cover;
+    background-color: #326795;
+    background-image: url("../imgs/tools_lrg.jpg");
+    background-position: top left -100px; }
+    .grid header .logo-holder {
+      display: none; }
+    .grid header nav {
+      grid-template-columns: 150px 1fr 180px 180px 180px;
+      margin-top: 30px; }
+      .grid header nav .nav-logo {
+        display: block;
+        background-image: url("../imgs/icons/ds_logo.svg");
+        background-repeat: no-repeat;
+        background-size: 80%;
+        background-position: center;
+        width: 100%;
+        height: 100%;
+        margin-left: 1.5em; }
+      .grid header nav .spacer {
+        display: block; }
+    .grid header #dan-large-box {
+      display: inline-block;
+      width: 40%;
+      float: right;
+      text-align: center;
+      padding: 2.8em 2.5em 0 2.5em;
+      margin-top: 40px; }
+      .grid header #dan-large-box p {
+        padding: 1em 2.5em 0 2.5; }
+    .grid header .main-title h1 {
+      font-size: 6em; }
+  .grid .whatwe .hundcontainer .hundred p {
+    font-size: 70px; }
+  .grid .whatwe .hundcontainer .trust p, .grid .whatwe .hundcontainer .reliable p, .grid .whatwe .hundcontainer .workrate p {
+    font-size: 20px; }
+  .grid .whatwe .hundcontainer .trust {
+    bottom: -0.2em; }
+  .grid .whatwe .hundcontainer .reliable {
+    bottom: -0.03em; }
+  .grid .whatwe .hundcontainer .workrate {
+    bottom: 0.15em; } }
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .grid {
+    max-width: 1240px;
+    margin: 0 auto 0 auto;
+    -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4); }
+    .grid .whatwe .hundcontainer .hundred p {
+      font-size: 70px; }
+    .grid .whatwe .hundcontainer .trust, .grid .whatwe .hundcontainer .reliable, .grid .whatwe .hundcontainer .workrate {
+      margin-left: 0.2em; }
+      .grid .whatwe .hundcontainer .trust p, .grid .whatwe .hundcontainer .reliable p, .grid .whatwe .hundcontainer .workrate p {
+        font-size: 20px; }
+    .grid .whatwe .hundcontainer .trust {
+      bottom: -0.2em; }
+    .grid .whatwe .hundcontainer .reliable {
+      bottom: -0.03em; }
+    .grid .whatwe .hundcontainer .workrate {
+      bottom: 0.15em; }
+    .grid .whatwe .hundcontainer .tick1, .grid .whatwe .hundcontainer .tick2, .grid .whatwe .hundcontainer .tick3 {
+      margin-left: 0.5em; }
+    .grid .whatwe .hundcontainer .tick1 {
+      bottom: -0.3em; }
+    .grid .whatwe .hundcontainer .tick2 {
+      bottom: -0.14em; }
+    .grid .whatwe .hundcontainer .tick3 {
+      bottom: 0.06em; }
+    .grid #contact .emailaddy {
+      font-size: 1.8em; } }
+
+/*# sourceMappingURL=main.css.map */
