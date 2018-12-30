@@ -86,7 +86,7 @@
           position: relative;
           margin: 0 auto;
           background-color: white;
-          background-image: url("../imgs/profile.jpg");
+          background-image: url("../Plastering-Sample/imgs/profile.jpg");
           background-size: 120%;
           background-position: -0.4em 0.8em;
           background-repeat: no-repeat;
@@ -116,7 +116,7 @@
       display: none; }
     .grid .whatwe {
       background-color: #eb3647;
-      background-image: url("../imgs/product_bg.jpg");
+      background-image: url("../Plastering-Sample/imgs/product_bg.jpg");
       background-repeat: no-repeat;
       background-size: 95%;
       background-position: center center; }
@@ -189,7 +189,7 @@
     min-height: 480px;
     background-size: cover;
     background-color: #326795;
-    background-image: url("../imgs/tools_lrg.jpg");
+    background-image: url("../Plastering-Sample/imgs/tools_lrg.jpg");
     background-position: top left -100px; }
     .grid header .logo-holder {
       display: none; }
@@ -198,7 +198,7 @@
       margin-top: 30px; }
       .grid header nav .nav-logo {
         display: block;
-        background-image: url("../imgs/icons/ds_logo.svg");
+        background-image: url("../Plastering-Sample/imgs/icons/ds_logo.svg");
         background-repeat: no-repeat;
         background-size: 80%;
         background-position: center;
