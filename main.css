@@ -31,14 +31,14 @@ header {
   height: 75vh;
   min-height: 480px;
   background-color: #326795;
-  background-image: url("../imgs/tools_sml.jpg");
+  background-image: url("../Plastering-Sample/imgs/tools_sml.jpg");
   background-size: cover;
   background-position: top right -20px;
   -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4);
   z-index: 1; }
   header .logo-holder {
-    background-image: url("../imgs/icons/ds_logo.svg");
+    background-image: url("../Plastering-Sample/imgs/icons/ds_logo.svg");
     background-repeat: no-repeat;
     background-size: 40%;
     background-position: center;
@@ -108,7 +108,7 @@ header {
     position: relative;
     margin: auto;
     background-color: white;
-    background-image: url("../imgs/profile.jpg");
+    background-image: url("../Plastering-Sample/imgs/profile.jpg");
     background-size: 120%;
     background-position: -0.4em 0.8em;
     background-repeat: no-repeat;
@@ -138,7 +138,7 @@ header {
   text-align: center;
   -webkit-box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4);
   box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.4);
-  background-image: url("../imgs/product_bg.jpg");
+  background-image: url("../Plastering-Sample/imgs/product_bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top right -60px; }
@@ -198,7 +198,7 @@ header {
     .whatwe .hundcontainer .tick1, .whatwe .hundcontainer .tick2, .whatwe .hundcontainer .tick3 {
       width: 15px;
       height: 15px;
-      background-image: url("../imgs/icons/checked.svg");
+      background-image: url("../Plastering-Sample/imgs/icons/checked.svg");
       background-size: cover;
       margin-left: 1.4em; }
       .whatwe .hundcontainer .tick1 p, .whatwe .hundcontainer .tick2 p, .whatwe .hundcontainer .tick3 p {
@@ -275,7 +275,7 @@ header {
 #contact {
   grid-area: contact;
   background-color: #326795;
-  background-image: url("../imgs/tools_sml.jpg");
+  background-image: url("../Plastering-Sample/imgs/tools_sml.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: top left 0px;
@@ -294,21 +294,21 @@ header {
     width: 40px;
     display: inline-block;
     margin: 0 auto 1em auto;
-    background-image: url("../imgs/icons/call-answer.svg");
+    background-image: url("../Plastering-Sample/imgs/icons/call-answer.svg");
     background-size: cover; }
   #contact .email-img {
     height: 40px;
     width: 40px;
     display: inline-block;
     margin: 0 auto 1em auto;
-    background-image: url("../imgs/icons/message.svg");
+    background-image: url("../Plastering-Sample/imgs/icons/message.svg");
     background-size: cover; }
   #contact .fb-img {
     height: 40px;
     width: 40px;
     display: block;
     margin: 0 auto 1em auto;
-    background-image: url("../imgs/icons/facebook-logo.svg");
+    background-image: url("../Plastering-Sample/imgs/icons/facebook-logo.svg");
     background-size: cover; }
   #contact p {
     font-weight: 400;
@@ -364,7 +364,7 @@ header {
     grid-template-areas: "header header" "whatwe reviews" "whatwe contact"; }
     .grid header {
       background-color: #326795;
-      background-image: url("../imgs/tools_sml.jpg");
+      background-image: url("../Plastering-Sample/imgs/tools_sml.jpg");
       background-size: cover;
       background-position: top right;
       background-repeat: no-repeat;
@@ -420,7 +420,7 @@ header {
           position: relative;
           margin: 0 auto;
           background-color: white;
-          background-image: url("../imgs/profile.jpg");
+          background-image: url("../Plastering-Sample/imgs/profile.jpg");
           background-size: 120%;
           background-position: -0.4em 0.8em;
           background-repeat: no-repeat;
@@ -450,7 +450,7 @@ header {
       display: none; }
     .grid .whatwe {
       background-color: #eb3647;
-      background-image: url("../imgs/product_bg.jpg");
+      background-image: url("../Plastering-Sample/imgs/product_bg.jpg");
       background-repeat: no-repeat;
       background-size: 95%;
       background-position: center center; }
@@ -523,7 +523,7 @@ header {
     min-height: 480px;
     background-size: cover;
     background-color: #326795;
-    background-image: url("../imgs/tools_lrg.jpg");
+    background-image: url("../Plastering-Sample/imgs/tools_lrg.jpg");
     background-position: top left -100px; }
     .grid header .logo-holder {
       display: none; }
@@ -532,7 +532,7 @@ header {
       margin-top: 30px; }
       .grid header nav .nav-logo {
         display: block;
-        background-image: url("../imgs/icons/ds_logo.svg");
+        background-image: url("../Plastering-Sample/imgs/icons/ds_logo.svg");
         background-repeat: no-repeat;
         background-size: 80%;
         background-position: center;
